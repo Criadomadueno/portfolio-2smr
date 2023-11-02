@@ -1,8 +1,6 @@
 /**************************************************************/
 
 
-/** PROPIEDAD DE MARIO ANTONIO CRIADO MADUEÑO *******************/
-
 
 /***************************************************************/
 
@@ -16,13 +14,8 @@
 
 
 @font-face {
-    font-family: playpen;
-    src: url(../font/Playpen/static/PlaypenSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: merriweather;
-    src: url(../font/Merriweather/Merriweather-Italic.ttf);
+    font-family: f;
+    src: url();
 }
 
 * {box-sizing: border-box;} /* El width incluye el padding 
@@ -44,14 +37,9 @@ body{background-image: url(../img/noodles-pattern.jpg);
         }
 
 blockquote{border-left: solid rgba(0, 128, 0, 0.76);
-            border-width: 8px;
-           background-color: rgba(133, 179, 59, 0.575);
+           background-color: rgba(133, 179, 59, 0.37);
            padding: 20px ;
-           font-family: merriweather ;
-           font-size:  20px ;
-            text-align: center;
-            font-weight: bold ;
-            text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.26); ;}
+           font-style: italic;}
 
 h1{text-align: center;
     margin-top: -9%;
@@ -67,13 +55,7 @@ h1{text-align: center;
 
 dt{font-weight: bold; 
     font-size: 1.1em;
-    color: rgb(43, 25, 25);
-    background-color: rgb(243, 235, 184);}
-
-    dd{font-weight: bold;
-    font-size: 1.1em;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.555);}
+    color: rgb(76, 42, 116);}
 
 #foto{width: 87%;
     margin: auto;
@@ -82,17 +64,8 @@ box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.56);} /* para que se comporte como un b
 
 #titulo {font-family:roman;
         color: rgb(68, 65, 65);
-        text-shadow: 1px 2px 4px rgb(122, 110, 110)
+        text-shadow: 1px 2px 5px rgb(122, 110, 110)
 }
-
-#Ingredientes{font-family: roman;
-        text-shadow: 1px 2px 4px rgb(122, 110, 110) }
-
-#Preparación{font-family: roman;
-    text-shadow: 1px 2px 4px rgb(122, 110, 110) }
-
-#Información{font-family: roman;
-    text-shadow: 1px 2px 4px rgb(122, 110, 110) }
 
 h2{text-align: center;
     margin-top: 50px;
@@ -107,27 +80,16 @@ h2{text-align: center;
     background-size: 20%;
     text-align: center;}
 
-    ul{text-align: center;
-font-family: merriweather;
-list-style-type: none;
-background-color: rgb(243, 235, 184);}
-ol{text-align: left;
-    background-color:rgb(243, 235, 184) ;
-font-family: merriweather;}
-    #li-ol{text-align: center;}
+    ul{text-align: center;}
+    li{text-align: center;}
     dl{text-align: center;}
     dt{text-align: center;}
     dd{text-align: center;}
 
 
-summary{background-color: rgba(0, 0, 0, 0.678);
-        background-position: right;
-        list-style: none;}
-summary::before{display: block;
-                content: "👀";
-                text-align: center;}
 
-summary:hover{cursor: pointer;}
-audio{margin: auto;
-background-size: 35%;
-width: 15%;}
+/*************************** GESTION DE LA RESPONSIVIDAD *******************************/
+
+@media only screen and (width<733px){
+    #wrapper {width: 95%;}
+}

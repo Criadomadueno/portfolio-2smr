@@ -1,0 +1,133 @@
+/**************************************************************/
+
+
+/** PROPIEDAD DE MARIO ANTONIO CRIADO MADUEÑO *******************/
+
+
+/***************************************************************/
+
+
+
+
+@font-face {
+    font-family:roman;
+    src: url(../font/Roman/roman_sd/Roman\ SD.ttf);
+}
+
+
+@font-face {
+    font-family: playpen;
+    src: url(../font/Playpen/static/PlaypenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: merriweather;
+    src: url(../font/Merriweather/Merriweather-Italic.ttf);
+}
+
+* {box-sizing: border-box;} /* El width incluye el padding 
+                            /*el espacio en blanco lo coge de 
+                            dentro del cuadro. Lo haré SIEMPRE*/
+
+
+body{background-image: url(../img/noodles-pattern.jpg);
+    background-size: 20%;}
+
+#wrapper {background-image: url(../img/soft-brick.png);
+          background-size: 35%;
+          width:70%; /* el width va en porcentaje */
+          margin: auto;
+          margin-top: 5%;
+          padding: 10%;
+          border-radius: 25.5px;
+          box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.96);
+        }
+
+blockquote{border-left: solid rgba(0, 128, 0, 0.76);
+            border-width: 8px;
+           background-color: rgba(133, 179, 59, 0.575);
+           padding: 20px ;
+           font-family: merriweather ;
+           font-size:  20px ;
+            text-align: center;
+            font-weight: bold ;
+            text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.26); ;}
+
+h1{text-align: center;
+    margin-top: -9%;
+    margin-bottom: 45.7px;
+    border: solid 5px rgb(173, 185, 199);
+    border-radius: 23%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    /*sombra de caja*/
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.96);
+    background-image: url(../img/marmol-pattern.jpg);
+    background-size: 20%;}
+
+dt{font-weight: bold; 
+    font-size: 1.1em;
+    color: rgb(43, 25, 25);
+    background-color: rgb(243, 235, 184);}
+
+    dd{font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.555);}
+
+#foto{width: 87%;
+    margin: auto;
+display: block;
+box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.56);} /* para que se comporte como un bloque (asi se va a dejar centrar)*/
+
+#titulo {font-family:roman;
+        color: rgb(68, 65, 65);
+        text-shadow: 1px 2px 4px rgb(122, 110, 110)
+}
+
+#Ingredientes{font-family: roman;
+        text-shadow: 1px 2px 4px rgb(122, 110, 110) }
+
+#Preparación{font-family: roman;
+    text-shadow: 1px 2px 4px rgb(122, 110, 110) }
+
+#Información{font-family: roman;
+    text-shadow: 1px 2px 4px rgb(122, 110, 110) }
+
+h2{text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: solid 5px rgb(173, 185, 199);
+    border-radius: 23%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    /*sombra de caja*/
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.96);
+    background-image: url(../img/marmol-pattern.jpg);
+    background-size: 20%;
+    text-align: center;}
+
+    ul{text-align: center;
+font-family: merriweather;
+list-style-type: none;
+background-color: rgb(243, 235, 184);}
+ol{text-align: left;
+    background-color:rgb(243, 235, 184) ;
+font-family: merriweather;}
+    #li-ol{text-align: center;}
+    dl{text-align: center;}
+    dt{text-align: center;}
+    dd{text-align: center;}
+
+
+summary{background-color: rgba(0, 0, 0, 0.678);
+        background-position: right;
+        list-style: none;}
+summary::before{display: block;
+                content: "👀";
+                text-align: center;}
+
+summary:hover{cursor: pointer;}
+audio{margin: auto;
+background-size: 35%;
+width: 15%;}

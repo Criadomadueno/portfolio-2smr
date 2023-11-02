@@ -1,0 +1,95 @@
+/**************************************************************/
+
+
+
+/***************************************************************/
+
+
+
+
+@font-face {
+    font-family:roman;
+    src: url(../font/Roman/roman_sd/Roman\ SD.ttf);
+}
+
+
+@font-face {
+    font-family: f;
+    src: url();
+}
+
+* {box-sizing: border-box;} /* El width incluye el padding 
+                            /*el espacio en blanco lo coge de 
+                            dentro del cuadro. Lo haré SIEMPRE*/
+
+
+body{background-image: url(../img/noodles-pattern.jpg);
+    background-size: 20%;}
+
+#wrapper {background-image: url(../img/soft-brick.png);
+          background-size: 35%;
+          width:70%; /* el width va en porcentaje */
+          margin: auto;
+          margin-top: 5%;
+          padding: 10%;
+          border-radius: 25.5px;
+          box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.96);
+        }
+
+blockquote{border-left: solid rgba(0, 128, 0, 0.76);
+           background-color: rgba(133, 179, 59, 0.37);
+           padding: 20px ;
+           font-style: italic;}
+
+h1{text-align: center;
+    margin-top: -9%;
+    margin-bottom: 45.7px;
+    border: solid 5px rgb(173, 185, 199);
+    border-radius: 23%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    /*sombra de caja*/
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.96);
+    background-image: url(../img/marmol-pattern.jpg);
+    background-size: 20%;}
+
+dt{font-weight: bold; 
+    font-size: 1.1em;
+    color: rgb(76, 42, 116);}
+
+#foto{width: 87%;
+    margin: auto;
+display: block;
+box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.56);} /* para que se comporte como un bloque (asi se va a dejar centrar)*/
+
+#titulo {font-family:roman;
+        color: rgb(68, 65, 65);
+        text-shadow: 1px 2px 5px rgb(122, 110, 110)
+}
+
+h2{text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: solid 5px rgb(173, 185, 199);
+    border-radius: 23%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    /*sombra de caja*/
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.96);
+    background-image: url(../img/marmol-pattern.jpg);
+    background-size: 20%;
+    text-align: center;}
+
+    ul{text-align: center;}
+    li{text-align: center;}
+    dl{text-align: center;}
+    dt{text-align: center;}
+    dd{text-align: center;}
+
+
+
+/*************************** GESTION DE LA RESPONSIVIDAD *******************************/
+
+@media only screen and (width<733px){
+    #wrapper {width: 95%;}
+}

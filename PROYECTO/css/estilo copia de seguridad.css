@@ -52,9 +52,9 @@ body{/*background-color: rgb(0, 0, 0);*/
 }
 
 #welcome {background-color: black;
-        color: rgb(255, 255, 255);
-        font-size: 45px;;
-        text-shadow: rgb(0, 255, 13) 5px 4px 7px;
+        color: rgb(0, 238, 255);
+        font-size: 45px;
+        text-shadow: 2px 1px 8px;
         border-top: solid 3.1px rgb(30, 255, 0);
         border-left: solid 3.0px rgb(30, 255, 0);
         border-radius: 5%;
@@ -87,10 +87,9 @@ hr{ border: solid 1.5px rgb(30, 255, 0);
 
 
 #hero {background-image: url(../img/Alien-removebg-preview.png);/*url(../img/hero-image.jpg);*/
-    height: 60%;  /** forzar el alto de la hero para ver la foto */
-    background-size: 70%; /** estira la foto para verla encajar */
-    background-repeat: no-repeat;
-    background-position: 45% 7%;/** donde está el punto de interés */
+    height: 95vh;  /** forzar el alto de la hero para ver la foto */
+    background-size: cover; /** estira la foto para verla encajar */
+    background-position: 66.66%;/** donde está el punto de interés */
     border: solid 3px white;
     border-radius: 0.5%;
     box-shadow: 0px 0px 20px 6px;

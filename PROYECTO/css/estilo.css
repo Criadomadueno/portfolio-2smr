@@ -15,15 +15,28 @@
     src: url(../font/monofonto/monofonto\ rg.otf);
 }
 
+@font-face {
+    font-family: alien;
+    src: url(../font/alien/DCC\ -\ The\ alien\ are\ coming.ttf);
+}
 
-
+@font-face {
+    font-family: alien-encounter;
+    src: url(../font/alien-encounter/Alien-Encounters-Regular.ttf);
+}
 
 /***************************  BOLD TEXT **************************************************************/
 
 
 
 b{color: rgba(234, 0, 255, 0.829);
-    }
+    text-shadow: 0px -1px 11.7px rgba(234, 0, 255, 0.568);
+}
+
+b #p1{
+    text-shadow: inherit;
+}
+
 
 
 
@@ -52,9 +65,9 @@ body{/*background-color: rgb(0, 0, 0);*/
 }
 
 #welcome {background-color: black;
-        color: rgb(255, 255, 255);
+        color: rgb(174, 235, 166);
         font-size: 45px;;
-        text-shadow: rgb(0, 255, 13) 5px 4px 7px;
+        text-shadow: rgb(132, 0, 255) 5px 4px 7px;
         border-top: solid 3.1px rgb(30, 255, 0);
         border-left: solid 3.0px rgb(30, 255, 0);
         border-radius: 5%;
@@ -62,6 +75,9 @@ body{/*background-color: rgb(0, 0, 0);*/
         margin-top: 25%;
         padding: 0.5%;
         letter-spacing: 15px;}
+
+
+#titleaboutme{text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);}
 
 
 #aboutme {text-align: center;
@@ -74,7 +90,12 @@ hr{ border: solid 1.5px rgb(30, 255, 0);
 
 #p1{text-align: justify;
                 margin-left: 17%;
-                margin-right: 17%;}
+                margin-right: 17%;
+                text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);}
+#p2{text-align: center;
+    margin-left: 17%;
+    margin-right: 17%;
+    text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);}
 
 #letrachica{text-align: right;
     font-size: 12.8px;}
@@ -86,17 +107,20 @@ hr{ border: solid 1.5px rgb(30, 255, 0);
 
 
 
-#hero {background-image: url(../img/Alien-removebg-preview.png);/*url(../img/hero-image.jpg);*/
-    height: 60%;  /** forzar el alto de la hero para ver la foto */
-    background-size: 70%; /** estira la foto para verla encajar */
+#hero {background-image: url(../img/defalien.jpg);/*url(../img/hero-image.jpg);*/
+    height: 70%;  /** forzar el alto de la hero para ver la foto */
+    background-size: 210%; /** estira la foto para verla encajar */
     background-repeat: no-repeat;
-    background-position: 45% 7%;/** donde está el punto de interés */
+    background-position: 48% 30%;/** donde está el punto de interés */
     border: solid 3px white;
-    border-radius: 0.5%;
+    border-radius: 1.4%;
     box-shadow: 0px 0px 20px 6px;
     color: white;
     padding: 1%;
     text-align: center;
+    width: 95%;
+    margin: 3% auto;
+    letter-spacing: 8px;
     } 
 
 
@@ -106,14 +130,12 @@ hr{ border: solid 1.5px rgb(30, 255, 0);
 /**********************            NAVIGATION BAR                 **************************/
 
 nav{text-align: center;
-    text-shadow: 2px 1px 6px;
     padding: 2%;
-    font-size: 40px;}
-
-
-
-
-
+    font-size: 50px;
+    color: rgb(30, 255, 0);
+    text-shadow: 4px 1px 5px rgb(175, 3, 255);
+    font-family: alien-encounter;
+    letter-spacing: 8px;}
 
 
 
@@ -132,6 +154,23 @@ nav{text-align: center;
 #music{margin-left: 44%;
         width: 150px;
         height: 15px;}
+
+
+
+/****************************   GALLERY   *****************************************************/
+
+#gallery{padding: 5% 0px;
+    text-align: center;}
+/*grid:}          /**** ¿QUE ES UN GRID? poner cosas en paralelo *******/
+
+
+
+
+
+
+
+
+
 
 /*********************************** responsivity *************************************/
 
@@ -172,7 +211,7 @@ nav{text-align: center;
 
 nav{margin: auto;
     text-align: center;
-    font-size: 20px;}
+    font-size: 30px;}
 
 
 }
@@ -184,7 +223,7 @@ nav{margin: auto;
     #welcome {  height: auto;
                 width: auto;
                 letter-spacing: 5px;
-                font-size: 35.5px;
+                font-size: 30.5px;
                 margin-top: 28%;}
 }
 

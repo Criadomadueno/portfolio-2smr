@@ -37,8 +37,26 @@ b #p1{
     text-shadow: inherit;
 }
 
+b:hover{color: rgb(189, 53, 252);}
 
 
+/*********************************** BLOCKQUOTE & CITES ***************************************************/
+
+blockquote{margin-left: auto ;
+        margin-right:auto;
+        margin-top: 7%;
+        margin-bottom: 9%;
+        border-left: solid 6.5px rgba(30, 255, 0, 0.915);
+        border-right: solid 6.5px rgba(30, 255, 0, 0.915);
+        box-shadow: -4px -1px 2px -2px rgb(30, 255, 0, 0.300);
+        box-shadow: 4px 1px -2px 2px rgb(30, 255, 0, 0.300);
+        border-radius: 5%;
+        width: 50%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+
+}
 
 
 /****************************       GENERAL LAYOUT      ************************************/
@@ -91,10 +109,8 @@ body{/*background-color: rgb(0, 0, 0);*/
 
 
 #titleaboutme{text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);}
+#titlecountry{text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);}
 
-
-#aboutme {text-align: center;
-        margin-top: 90px;}
 
 hr{ border: solid 1.5px rgb(30, 255, 0);
     box-shadow: 1px 1px 6px 2px rgba(30, 255, 0, 0.514);
@@ -110,8 +126,95 @@ hr{ border: solid 1.5px rgb(30, 255, 0);
     margin-right: 17%;
     text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);}
 
+#p3{text-align: justify;
+     margin-left: 17%;
+     margin-right: 17%;
+    text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);}
+
 #letrachica{text-align: right;
     font-size: 12.8px;}
+
+
+
+#hr3{
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+/************************** SECTIONS ****************************************************/
+
+
+
+#aboutme {text-align: center;
+        margin-top: 90px;}
+
+
+#interests{text-align: center;
+    margin-top: 5%;
+    margin-bottom:10% ;}
+
+#country{text-align: center;
+    margin-top: 5%;
+    margin-bottom:10%
+
+}
+
+
+
+
+
+
+/************************ ACCORDION **************************************************/
+
+.accordion {background-color: black ;
+    width: 100%;
+    margin-top: 0.5%;
+    font-family: monofonto;
+    font-size: 1.05em;
+    border: solid 1.5px rgb(30, 255, 0);
+    box-shadow: 1px 1px 6px 2px rgba(30, 255, 0, 0.714);
+    text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);
+  }
+  
+  .active, .accordion:hover {
+    color: #000000;
+    background: rgb(30, 255, 0);
+    border: 2.3px solid #010305;
+    text-shadow: 0 0 5px #00ff22,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px rgb(30, 255, 0),
+                0 0 20px rgb(30, 255, 0)
+                0 0 50px rgb(30, 255, 0),
+                0 0 100px rgb(30, 255, 0);
+    cursor:pointer;
+    padding: 0.5%;
+    border: solid 1.5px rgb(30, 255, 0);
+    box-shadow: 1px 1px 6px 2px rgba(30, 255, 0, 0.514);
+    width: 80%;
+    
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    text-align: justify;
+    margin-left: 17%;
+    margin-right: 17%;
+    text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);
+    
+  }
+
+
+
+
+
 
 
 
@@ -144,31 +247,32 @@ hr{ border: solid 1.5px rgb(30, 255, 0);
 
 nav{text-align: center;
     padding: 2%;
-    font-size: 50px;
+    font-size: 25px;
     color: rgb(30, 255, 0);
     text-shadow: 4px 1px 5px rgb(175, 3, 255);
     font-family: alien-encounter;
     letter-spacing: 8px;}
 
-nav:hover{text-align: center;
+/*nav:hover{text-align: center;
     padding: 2%;
-    font-size: 50px;
+    font-size: 27px;
     color: rgb(175, 3, 255);
     text-shadow: 4px 1px 5px rgb(30, 255, 0);
     font-family: alien-encounter;
     letter-spacing: 8px;
-    cursor:pointer}
+    cursor:pointer}*/
 
 .navsec{
     float: left;
 }
 
 
+
 /**************************** MULTIMEDIA *********************************************************/
 
 
 #marcianito{ 
-   padding-left: 38%;
+    padding-left: 38%;
     padding-right: 38%;
     padding-top: 20px;
     padding-bottom: 25px;
@@ -184,28 +288,358 @@ nav:hover{text-align: center;
         border-radius: 15%;
         box-shadow: 0px 0px 5.5px 6px;
         color: rgba(30, 255, 0, 0.849);
-        margin: 30px auto}
+        margin: 30px auto;
+        filter: saturate(400%);}
         
 #mario:hover{border: solid 1px rgb(48, 230, 102);
     border-radius: 15%;
     box-shadow: 0px 0px 5.5px 6px;
     color: rgba(255, 255, 255, 0.849);
-    margin: 30px auto
+    margin: 30px auto;
+    filter: contrast(110%);
+    filter: saturate(1000%);
 
 }
+
+#torandom{filter: grayscale(100%);
+}
+#torandom:hover{filter: brightness(100%);
+                filter: contrast(110%);}
+
+
+#marco-aurelio{float: left;
+                width: 15%;
+                margin-right: 10px;
+                margin-top: 5%;
+                filter: drop-shadow(0 0 5px rgb(30, 255, 0));}
+
+#marco-aurelio:hover{float: left;
+            width: 15%;
+            margin-right: 10px;
+            margin-top: 5%;
+            filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+            cursor: pointer;}
+
+#linkedin{border: solid 1px rgb(225, 230, 236);
+    border-radius: 15%;
+    box-shadow: 0px 0px 5.5px 6px;
+    color: rgba(255, 255, 255, 0.849);
+    margin: 30px auto;
+    filter: saturate(110%);
+
+
+}
+
+/************************** PROFILE PHOTO FLIP !!!!!!! **********************************************/
+
+
+/*** ((I NEED THESE COMMENTS FOR NEXT CONFIGS, THE PROCESS ARE COMPLEX)) *****/
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+margin: auto;
+    background-color: transparent;
+    width: 150px;
+    height: 170px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    cursor: pointer;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 150px;
+    height: 170px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+
+    color: black;
+  }
+  
+  /* Style the back side */
+
+
+   .flip-box-back {
+    color: white;
+    transform: rotateY(180deg); 
+  }
+
+
+.flip-box{
+    margin-bottom: 5%;
+}
+
 
 
 /****************************   GALLERY   *****************************************************/
 
-#gallery{padding: 5% 0px;
-    text-align: center;}
-/*grid:}          /**** ¿QUE ES UN GRID? poner cosas en paralelo *******/
+
+div.scroll-container {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.568), rgb(0, 0, 0));
+    border-top: solid 5px;
+    border-right: solid 4px;
+    border-left: solid 4px;
+    border-radius: 9.9%;
+    box-shadow: 0px -10px 20px 2px rgba(30, 255, 0, 0.814);
+    box-shadow: #ffffff;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-top: 8%;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
 
 
 
 
+/************************************ IMAGES *****************************************************/
+
+#sevilla{filter: opacity(35%);
+    border-radius: 5%;}
+
+#sevilla:hover{filter: brightness(115%);
+                filter: saturate(110%);
+                cursor: help;
+}
+
+#malaga{filter: opacity(35%);
+    border-radius: 5%;}
+
+#malaga:hover{filter: brightness(115%);
+    filter: saturate(110%);
+    cursor: help;}
+
+#malaga2{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#malaga2:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+  
+#ronda{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#ronda:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#ronda2{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#ronda2:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+    
+#saturno{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#saturno:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#saturno-city{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#saturno-city:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+    
+#cartama{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#cartama:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+    
+#granada{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#granada:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#montefrio{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#montefrio:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+    
+#estepona{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#estepona:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#cadiz{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#cadiz:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#sevilla2{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#sevilla2:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#toledo{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#toledo:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#avila{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#avila:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#segovia-alcazar{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#segovia-alcazar:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#segovia-acueducto{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#segovia-acueducto:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#valencia-museo{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#valencia-museo:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#madrid{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#madrid:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#barcelona{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#barcelona:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+#covadonga{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#covadonga:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
 
 
+#galicia{filter: opacity(35%);
+        border-radius: 5%;}
+    
+#galicia:hover{filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;}
+
+
+
+/******************** GRID ****************************/
+
+
+.grid-1{display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 16%;
+        }
+
+
+.col-1{text-align: center;
+margin-top: 5%;}
+
+.col-1:hover{text-align: center;
+    /*padding: 2%*/;
+    font-size: 25.1px;
+    color: greenyellow;
+    text-shadow: 4px 1px 5px rgb(30, 255, 0);
+    font-family: alien-encounter;
+    letter-spacing: 8px;
+    cursor:pointer;
+    zoom: 108%;}
+
+.grid-2{display: grid; /* el contenedor va a sufrir división*/
+        grid-template-columns: 50% 50%;
+        border: solid 2px;}
+
+
+
+
+/************************ BUTTONS ****************************/
+
+
+button {
+    font-family: monofonto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(30, 255, 0);
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 2px solid rgb(30, 255, 0);
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+#btn{margin-bottom: 4%;
+    margin-top: 3%;
+    width: 12%;}
+#btn:hover,:focus {
+    color: #000000;
+    background: rgb(30, 255, 0);
+    border: 2.3px solid #010305;
+    text-shadow: 0 0 5px #00ff22,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px rgb(30, 255, 0),
+                0 0 20px rgb(30, 255, 0)
+                0 0 50px rgb(30, 255, 0),
+                0 0 100px rgb(30, 255, 0);
+    cursor:pointer;
+}
+
+#texto-oculto{display: none;}
 
 
 
@@ -291,6 +725,5 @@ nav:hover{margin: auto;
     text-align: center;
 
 }
-
 
 

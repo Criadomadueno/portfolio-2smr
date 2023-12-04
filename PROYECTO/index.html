@@ -9,33 +9,204 @@
 </head>
 <body>
     <div id="wrapper">
-        <nav>HOME - ABOUT ME - EXPERIENCE - STUDIES</nav>
+        <nav>
+
+            <div class="grid-1">
+
+                <div class="col-1">
+                    HOME
+                </div>
+                
+                <div class="col-1">
+                    ABOUTME
+                </div>
+
+                <div class="col-1">
+                    COUNTRY
+                </div>
+
+                <div class="col-1">
+                    EXPERIENCE
+                </div>
+
+                <div class="col-1">
+                    STUDIES
+                </div>
+
+            </div>
+        
+        </nav>
+
+
         <section id="hero">
             <h1 id="welcome">THE GREEN WEB</h1>
         </section>
 <br>
 <br>
         <section id="aboutme">
+            
             <h3 id="titleaboutme">WHO AM I?</h3>
             <hr>
             <p id= "p2">My name is <b>Mario</b>. Im a human being (by now >:)</p>
-            <a href="https://www.linkedin.com/in/criadomadueno">
-            <img src="./img/FOTO MATRIX.jpg" alt="persona mezclada con efectos de datos informáticos" id="mario" width="150" height="170">
-            </a>
-            <p id="p1">My proposal in this page is that you know about me. <b>Im searching for a job</b>, and I want you to notice. In the next pages, you'll see more information about my interests, <b>my studies</b> and <b>my experience</b>. As you see, this page is not finished yet, but I'm trying my best. My biological body need to rest, and my mind isn't enough powerfull to do all six subjects at the same time, but nothing is impossible, so, chill out reader, I'll be updating this database with random stuff that I'm imagining while I'm writing at the moment. But, careful! >:( this is not only about random and weird things. This message box is for giving you a first impression. In the next fields (i mean, text fields, not the crop circles fields, that is misinformation, because <b>aliens DON'T exist</b>) you're gonna have what are you looking for, cybertraveller.</p>
-            <p id="p1">Are you entertained? Well, I need to do a lot of things, but, while i'm working in this page, you can enjoy this absolutely and majestic non-terrestrial-dancing-being:</p>
-            <P id="p1">(aand... YES, it is totally FAKE and FICTIONAL, because aliens DON'T EXIST, isn't it? ;)</P>
+
+        
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <a href="https://www.linkedin.com/in/criadomadueno">
+                    <img src="./img/FOTO MATRIX.jpg" alt="Mario" id="mario" width="150" height="170">
+                    </a>
+                  </div>
+                  <div class="flip-box-back">
+                    <a href="https://www.linkedin.com/in/criadomadueno">
+                    <img  id= "linkedin"src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png" alt="linkedin" id="mario-reverse" width="150" height="170">
+                  </a>
+                </div>
+                </div>
+              </div>
+
+            <p id="p1">My proposal in this page is that you know about me. <b>Im searching for a job</b>, and I want you to notice. In the next pages, you'll see more information about my interests, <b>my studies</b> and <b>my experience</b>.<span id="dots">..</span><span id="texto-oculto"> As you see, this page is not finished yet, but I'm trying my best. My biological body need to rest, and my mind isn't enough powerfull to do all six subjects at the same time, but nothing is impossible, so, chill out reader, I'll be updating this database with random stuff that I'm imagining while I'm writing at the moment. But, careful! >:( this is not only about random and weird things. This message box is for giving you a first impression. In the next fields (i mean, text fields, not the crop circles fields, that is misinformation, because <b>aliens DON'T exist</b>) you're gonna have what are you looking for, cybertraveller.<br><br> Im showing you my interests at first place of the page, because I want this page to be personal. I'm already show you my competences in the CV, and you came to this web via my CV. So, I understand that you want to know more about my lifestyle.</p></span>
+            <br>
+            <button onclick="myFunction()" id="btn">MORE!</button>
+            
+            <script>
+                function myFunction() {
+                  var dots = document.getElementById("dots");
+                  var moreText = document.getElementById("texto-oculto");
+                  var btnText = document.getElementById("btn");
+                
+                  if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "MORE!"; 
+                    moreText.style.display = "none";
+                  } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "CLOSE"; 
+                    moreText.style.display = "inline";
+                  }
+                }
+                </script>
+        
+            <br>
             <br>
             <hr>
         </section>
 
-        <img src="./img/friendly-mate.gif" alt="marcianito bailarín" id="marcianito"/>
+
 
         <br>
 
-        <section> <audio controls src="./audio/song-that-play-when-you-are-riding-space-cows.mp3" id="music"></audio>
-        </section>
+
+        <section id="interests">
+            <h3 id="titleaboutme">MY INTERESTS</h3>
+            <p id="p2">Wanna know about my hobbies? let's go!</p>
+
+        
+<button class="accordion">PHILOSOPHY</button>
+<div class="panel">
+    <a href="https://encyclopaedia.herdereditorial.com/wiki/Autor:Marco_Aurelio">
+    <img  id= "marco-aurelio" src="https://assets-global.website-files.com/6034d7d1f3e0f52c50b2adee/624fff2c95f15556ad5605b7_609be5c0911ee804cdf6a135_marco20aurelio20transparencia.png" alt="Marco Aurelio">
+    </a>
+    <blockquote style="font-style: italic;">
        
+       You have power over your mind, not outside events. Realize this, and you will find <b>strenght</b> <br><br>
+       <cite>-Marcus Aurelius<cite>
+    </blockquote>
+    <hr><br>
+    <p>If I could have eternal life, I would spend it all reading about the great thinkers. The human mind is beautiful.</p>
+    <p>Since I was in the adolescence, I began to reading the History of the Philosophy in the Bachelor. At first, I was afraid and scared about Philosophy, because I thought that this subject was obscure and very boring. Poor me! I couldn't be more wrong. When I first read Plato's dialogues, I fell in love with the reasonings about the most importants questions of the humanity. What is the Truth? What is the Happiness? I've never did these questions before. Since that moment, I've gained counsciousness about life, and it was a no-return way. Now, I really <b>need</b> to know every aspect of knowledge. I get pleased every time I found a new path to wisdom.  </p>
+    <p>In general, I like all the categories of Philosophy (Metaphysics, Ethics, Politics, philosophy of culture...) but I specially love the Existentialism. I don't know. These philosophers have something that attracts me. My favourite philosopher is Albert Camus: an existentialist, of course! He wasn't just a philosopher, but a novelist. He earned a Nobel Prize because of his novel <i>The Stranger</i>. My favourite book of all time it's from him, and it's called <i>The Myth of Sisyphus</i> </p>
+    <p>Also I like a lot of subjects like Mythology, Theology, Anthropology, or Evolution Theory. I get excited every time I read how humans from different continents have a similar point of view about the "Hero Journey", I mean, every culture shares a similar pattern in his heroes, gods and myths. Thats a very interesting topic theorized by Joseph Campbell in his book <i>The Hero with a Thousand Faces</i> (I strongly recommend this book, because his work is the inspiration of the majority of the Hollywood writers. Joseph Campbell build the well-known "Hero path" or "Monomyth")</p>
+</div>
+
+<button class="accordion">VIDEOGAMES</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">COMPUTING</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">MUSIC</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">FILMS</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+
+<hr id="hr3">
+
+        </section>
+
+<!--SECCION DE EJEMPLO DE GRID A DOS COLUMNAS: 1 CONTENEDOR GRID 2, Y DOS COLUMNAS DENTRO QUE SE LLAMAN COL 2-->
+
+        <section id="country">
+
+            <h3 id="titlecountry">SPAIN, MY COUNTRY</h3>
+            <p id="p3">Do you believe you could know better a person by the place they was born? An image is better than one trillion words. Here is my antique multiversial reel, I found it in my molecular coffer. This is my fatherland:</p>
+
+
+
+            <div class="scroll-container">
+                <img id= "malaga" src="./img/malaga.jpg" alt="Cinque Terre" width="600" height="400" title="Málaga city">
+                <img id= "sevilla" src="./img/sevilla.jpg" alt="Forest" width="600" height="400" title="Sevilla Cathedral">
+                <img id= "malaga2" src="./img/malaga2.jpg" alt="Northern Lights" width="600" height="400" title="Málaga city">
+                <img id="ronda" src="./img/ronda.jpg" alt="Mountains" width="600" height="400" title="Ronda">
+                <img id="ronda2" src="./img/ronda2.jpg" alt="Mountains" width="600" height="400" title="Ronda Tajo">
+                <img id="saturno" src="./img/saturno.jpg" alt="Mountains" width="600" height="400" title="Our pla- I mean, what?">
+                <img id="saturno-city" src="./img/saturno-city.jpg" alt="Mountains" width="600" height="400" title="A completely fictional city that has nothing to do with me">
+                <img id="cartama" src="./img/cartama.jpg" alt="Mountains" width="600" height="400" title="Cártama town, Málaga">
+                <img id="granada" src="./img/granada.jpg" alt="Mountains" width="600" height="400" title="Alhambra of Granada">
+                <img id="montefrio" src="./img/montefrio.jpg" alt="Mountains" width="600" height="400" title="Montefrio town, Granada">
+                <img id="estepona" src="./img/estepona.jpg" alt="Mountains" width="600" height="400" title="Estepona city">
+                <img id="cadiz" src="./img/cadiz.jpg" alt="Mountains" width="600" height="400" title="Cádiz city">
+                <img id="sevilla2" src="./img/sevilla2.jpg" alt="Mountains" width="600" height="400" title="Spain Square, Sevilla">
+                <img id="toledo" src="./img/toledo.jpg" alt="Mountains" width="600" height="400" title="Toledo's Alcazar">
+                <img id="avila" src="./img/avila.jpg" alt="Mountains" width="600" height="400" title="Wall of Ávila">
+                <img id="segovia-alcazar" src="./img/segovia-alcazar.jpg" alt="Mountains" width="600" height="400" title="Alcazar of Segovia">
+                <img id="segovia-acueducto" src="./img/segovia-acueducto.jpg" alt="Mountains" width="600" height="400" title="Aqueduct of Segovia">
+                <img id="valencia-museo" src="./img/valencia-museo.jpg" alt="Mountains" width="600" height="400" title="Oceanic museum of Valencia">
+                <img id="madrid" src="./img/madrid.jpeg" alt="Mountains" width="600" height="400" title="Cibeles square, Madrid">
+                <img id="barcelona" src="./img/barcelona.jpg" alt="Mountains" width="600" height="400" title="Sacred Family, Barcelona">
+                <img id="covadonga" src="./img/covadonga.jpg" alt="Mountains" width="600" height="400" title="Church of Covadonga, Asturias">
+                <img id="galicia" src="./img/galicia.jpg" alt="Mountains" width="600" height="400" title="A Horreon of Galicia (Granary)">
+                
+
+                
+            </div>
+              
+
+
+
+
+        </section>
+        
+
+
+<!--------------------------->
 
         <section id="experience">
             aquí va la EXPERIENCE
@@ -49,11 +220,17 @@
             galería
         </section>
 
+        <p id="p1">Are you entertained? Well, I need to do a lot of things, but, while i'm working in this page, you can enjoy this absolutely and majestic non-terrestrial-dancing-being:</p>
+        <P id="p1">(aand... YES, it is totally FAKE and FICTIONAL, because aliens DON'T EXIST, isn't it? ;)</P>
+        <img src="./img/friendly-mate.gif" alt="marcianito bailarín" id="marcianito"/>
+        <section> <audio controls src="./audio/song-that-play-when-you-are-riding-space-cows.mp3" id="music"></audio>
+
         <footer>
             author: Mario Antonio Criado Madueño :-)
             <p id="letrachica">VERSION RELEASE: 1.5</p>
             <p id="letrachica">LAST UPDATED: 10/11/2023 20:44</p>
         </footer>
+        </div>
     </div>
 </body>
 </html>

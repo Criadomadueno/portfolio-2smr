@@ -3,7 +3,7 @@
 /**                                                                                     **/        
 /**                     FIRST RELEASE: 2023 - 11 - 03  08:50 MÁLAGA,SPAIN               **/
 /**                                                                                     **/        
-/**                     CURRENT VERSION:  1.                                            **/
+/**                     CURRENT VERSION:  5.                                            **/
 /**                                                                                     **/        
 /**                                                                                     **/
 /**                                                                                     **/    
@@ -38,6 +38,23 @@ b #p1{
 }
 
 b:hover{color: rgb(189, 53, 252);}
+
+
+
+/************************ ENLACES *************************/
+
+a{color: inherit ;
+  text-shadow: inherit;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
 
 
 /*********************************** BLOCKQUOTE & CITES ***************************************************/
@@ -92,7 +109,8 @@ body{/*background-color: rgb(0, 0, 0);*/
         box-shadow: inset 4px 4px 5px 2px rgba(30, 255, 0, 0.514);
         margin-top: 25%;
         padding: 0.5%;
-        letter-spacing: 15px;}
+        letter-spacing: 15px;
+        }
 
 #welcome:hover{background-color: black;
     color: greenyellow;
@@ -103,7 +121,6 @@ body{/*background-color: rgb(0, 0, 0);*/
     border-radius: 5%;
     box-shadow: inset 4px 4px 5px 2px rgba(30, 255, 0, 0.514);
     cursor:cell;
-
 
 }
 
@@ -223,11 +240,11 @@ hr{ border: solid 1.5px rgb(30, 255, 0);
 
 
 
-#hero {background-image: url(../img/defalien.jpg);/*url(../img/hero-image.jpg);*/
-    height: 70%;  /** forzar el alto de la hero para ver la foto */
-    background-size: 210%; /** estira la foto para verla encajar */
+#hero {background-image: url(../img/defalien.jpg);
+    height: 70%;  
+    background-size: 210%; 
     background-repeat: no-repeat;
-    background-position: 48% 30%;/** donde está el punto de interés */
+    background-position: 48% 30%;
     border: solid 3px white;
     border-radius: 1.4%;
     box-shadow: 0px 0px 20px 6px;
@@ -261,6 +278,9 @@ nav{text-align: center;
     font-family: alien-encounter;
     letter-spacing: 8px;
     cursor:pointer}*/
+
+
+
 
 .navsec{
     float: left;
@@ -419,9 +439,10 @@ div.scroll-container {
 #sevilla{filter: opacity(35%);
     border-radius: 5%;}
 
-#sevilla:hover{filter: brightness(115%);
-                filter: saturate(110%);
-                cursor: help;
+#sevilla:hover{
+        filter: brightness(115%);
+        filter: saturate(110%);
+        cursor: help;
 }
 
 #malaga{filter: opacity(35%);
@@ -580,25 +601,38 @@ div.scroll-container {
 .grid-1{display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 16%;
+        margin-top: 3%;
+        margin-bottom: 1%;
+        
         }
 
 
 .col-1{text-align: center;
-margin-top: 5%;}
+        border: solid ;
+        padding-top: 10%;
+        padding-bottom: 15%;
+        font-size: large;
+        box-shadow:1px 1px 6px 2px rgba(30, 255, 0, 0.514) ;
+        margin-right: 4%;
+        border-radius: 16%;
+        transition: 0.2s ease-out}
 
 .col-1:hover{text-align: center;
     /*padding: 2%*/;
-    font-size: 25.1px;
+    font-size: medium;
     color: greenyellow;
     text-shadow: 4px 1px 5px rgb(30, 255, 0);
     font-family: alien-encounter;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
     cursor:pointer;
-    zoom: 108%;}
+    zoom: 108%;
+    box-shadow:1px 1px 15px 4px rgba(30, 255, 0, 0.914)}
 
 .grid-2{display: grid; /* el contenedor va a sufrir división*/
-        grid-template-columns: 50% 50%;
-        border: solid 2px;}
+        grid-template-columns: 10% 10% 10% 6% 16% 29% 20%;
+        text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);
+        font-size: 0.75em;
+        margin: 2%;}
 
 
 
@@ -624,7 +658,12 @@ button {
 
 #btn{margin-bottom: 4%;
     margin-top: 3%;
-    width: 12%;}
+    width: 12%;
+    text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568)
+}
+
+
+
 #btn:hover,:focus {
     color: #000000;
     background: rgb(30, 255, 0);
@@ -644,16 +683,130 @@ button {
 
 
 
+
+
+
+
+
+
+/************** FLECHA ESTÁTICA **************/
+
+
+#flechaarriba {                                 /*********thanks to hendra fhx for the png image <3********************/
+        position: fixed;
+        bottom: 20px; 
+        right: 1px; 
+        z-index: 99; 
+        cursor: pointer;
+        padding: 15px; 
+        border-radius: 10px;
+        width: 5%;
+        opacity: 0.4 ;
+    }
+
+#flechaarriba:hover{
+
+        position: fixed;
+        bottom: 20px; 
+        right: 1px; 
+        z-index: 99; 
+        cursor: pointer;
+        padding: 15px; 
+        border-radius: 10px;
+        width: 5%;
+        opacity: 1 ;
+        filter: brightness(105%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*********************************** responsivity *************************************/
 
 
 
 
-@media only screen and (width<450px){
-   
-    #welcome {
-        font-size: 15px;
-        margin-top: 50%;}
+@media only screen and (max-width: 790px) {                     /***************** SHORT SCREENS ****************/
+
+
+#welcome{width: auto;
+        font-size: 1.1em;}
+#marcianito{
+        padding-left: 25%;
+        padding-right: 38%;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        width: 200px;}
+    
+#titleaboutme{font-size: 19px}
+#titlecountry{font-size: 19px;}
+#p{font-size: 15px;
+        margin-left: 10%;
+        margin-right: 10%;}
+#p1{font-size: 15px;
+        margin-left: 10%;
+        margin-right: 10%;}
+#p2{font-size: 15px;
+        margin-left: 10%;
+        margin-right: 10%;}
+#p3{font-size: 15px;
+        margin-left: 10%;
+        margin-right: 10%;}
+#blockquote{font-size: 15px;}
+#blqt{font-size: 15px;}
+#marcusquote{font-size: 15px;}
+#p4{font-size: 15px;
+        margin-left: -3%;
+        margin-right: -3%;}
+
+#blqt{margin-right: 100%;
+        margin-left: 0%;
+        width: 80%;}
+
+.col-1{
+                text-align: center;
+                border: solid ;
+                padding-top: 10%;
+                padding-bottom: 15%;
+                font-size: 8px;
+                box-shadow:1px 1px 6px 2px rgba(30, 255, 0, 0.514) ;
+                margin-right: 4%;
+                border-radius: 16%;
+                transition: 0.2s ease-out;
+                letter-spacing: 2px;
+        }
+        
+        
+.col-1:hover{text-align: center;
+                /*padding: 2%*/;
+                font-size: 7px;
+                color: greenyellow;
+                text-shadow: 4px 1px 5px rgb(30, 255, 0);
+                font-family: alien-encounter;
+                letter-spacing: 4px;
+                cursor:pointer;
+                zoom: 90%;
+                box-shadow:1px 1px 15px 4px rgba(30, 255, 0, 0.914)}
+        
+#btn{width: 30%;}
+
+
+.accordion{font-size: 17px;}
+
+
+.col-2{font-size: 6px;}
+.col-2:hover{zoom: 150%;
+             letter-spacing: 1px;}
 
 
 
@@ -661,69 +814,102 @@ button {
 
 
 
-#wrapper {width: 90%}
-   
+
+
+
+#malaga{width: 180px; height: 120px;}
+#malaga2{width: 180px; height: 120px;}
+#sevilla{width: 180px; height: 120px;}
+#ronda{width: 180px; height: 120px;}
+#ronda2{width: 180px; height: 120px;}
+#saturno{width: 180px; height: 120px;}
+#saturno-city{width: 180px; height: 120px;}
+#cartama{width: 180px; height: 120px;}
+#granada{width: 180px; height: 120px;}
+#montefrio{width: 180px; height: 120px;}
+#estepona{width: 180px; height: 120px;}
+#cadiz{width: 180px; height: 120px;}
+#sevilla2{width: 180px; height: 120px;}
+#toledo{width: 180px; height: 120px;}
+#avila{width: 180px; height: 120px;}
+#segovia-alcazar{width: 180px; height: 120px;}
+#segovia-acueducto{width: 180px; height: 120px;}
+#valencia-museo{width: 180px; height: 120px;}
+#madrid{width: 180px; height: 120px;}
+#barcelona{width: 180px; height: 120px;}
+#covadonga{width: 180px; height: 120px;}
+#galicia{width: 180px; height: 120px;}
+
+/****** FLIP BOX FOR SHORT SCREENS ***********/
+
+#mario{width: 100px; height: 120px;}
+#linkedin{width: 100px; height: 120px;}
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1204px) {     /***************** MEDIUM SCREENS ****************/
+
+
+.col-1{
+        text-align: center;
+        border: solid ;
+        padding-top: 10%;
+        padding-bottom: 15%;
+        font-size: 13px;
+        box-shadow:1px 1px 6px 2px rgba(30, 255, 0, 0.514) ;
+        margin-right: 4%;
+        border-radius: 16%;
+        transition: 0.2s ease-out;
+        letter-spacing: 2px;
 }
 
 
+.col-1:hover{text-align: center;
+        /*padding: 2%*/;
+        font-size: 10px;
+        color: greenyellow;
+        text-shadow: 4px 1px 5px rgb(30, 255, 0);
+        font-family: alien-encounter;
+        letter-spacing: 4px;
+        cursor:pointer;
+        zoom: 108%;
+        box-shadow:1px 1px 15px 4px rgba(30, 255, 0, 0.914)}
 
-
-@media only screen and (width<650px){
-    #wrapper {width: 90%}
-    #welcome {
-        font-size: 20px;
-        margin-top: 68%;}
-
-
-    #marcianito{padding-left: 20%}
-}
-
-
-
-
-
-@media only screen and (width<785px){
-    #welcome {  height: auto;
-                width: auto;
-                letter-spacing: 5px;
-                font-size: 25px;
-                margin-top: 58%;}
-
-
-
-
-nav{margin: auto;
-    text-align: center;
-    font-size: 30px;}
-
-nav:hover{
-
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-}
-
+#btn{width: 20%;
 
 }
 
+#marco-aurelio{float: left;
+        width: 20%;
+        padding-right: -20%;
+        margin-top: 20%;
+        filter: drop-shadow(0 0 5px rgb(30, 255, 0));}
+
+#marco-aurelio:hover{float: left;
+    width: 15%;
+    margin-right: 10px;
+    margin-top: 5%;
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+    cursor: pointer;}
+
+
+    }
+    
+
+@media only screen and (min-width: 1025px) {                    /***************** BIG SCREENS ****************/
+       
+    }
 
 
 
-@media only screen and (width<1260px){
-    #welcome {  height: auto;
-                width: auto;
-                letter-spacing: 5px;
-                font-size: 30.5px;
-                margin-top: 28%;}
-}
 
 
-nav{margin: auto;
-    text-align: center;}
-
-nav:hover{margin: auto;
-    text-align: center;
-
-}
 
 
+
+
+
+
+
+
+    

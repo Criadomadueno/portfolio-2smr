@@ -1,13 +1,17 @@
 /*****************************************************************************************/
-/**                     AUTHOR: MARIO ANTONIO CRIADO MADUEÑO                            **/
+/**                   AUTHOR: MARIO ANTONIO CRIADO MADUEÑO                              **/
 /**                                                                                     **/        
-/**                     FIRST RELEASE: 2023 - 11 - 03  08:50 MÁLAGA,SPAIN               **/
+/**                   FIRST RELEASE: 2023 - 11 - 03  08:50 MÁLAGA,SPAIN                 **/
 /**                                                                                     **/        
-/**                     CURRENT VERSION:  5.                                            **/
+/**                   CURRENT VERSION:  3.0 "Canopus".                                  **/
 /**                                                                                     **/        
+/**                   DISCLAIMER= ALL MULTIMEDIA ARE PROPERTY OF                        **/
+/**                                 HIS RESPECTIVES OWNERS.                             **/                                                                   
+/**                                 THIS PROJECT HAS ACADEMIC PURPOSES ONLY             **/                                                        
 /**                                                                                     **/
-/**                                                                                     **/    
-/**                                                                                     **/
+/*****************************************************************************************/
+
+
 
 /**************************            FONTS                 *****************************/
 @font-face {
@@ -127,12 +131,17 @@ body{/*background-color: rgb(0, 0, 0);*/
 
 #titleaboutme{text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);}
 #titlecountry{text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);}
+#titleexperience{text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);
+                text-align: center;
+                margin-top: 7%;
+                font-size: 1.25em;}
 
 
 hr{ border: solid 1.5px rgb(30, 255, 0);
     box-shadow: 1px 1px 6px 2px rgba(30, 255, 0, 0.514);
     width: 30%}
 
+p{text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568)}
 
 #p1{text-align: justify;
                 margin-left: 17%;
@@ -147,6 +156,19 @@ hr{ border: solid 1.5px rgb(30, 255, 0);
      margin-left: 17%;
      margin-right: 17%;
     text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);}
+
+#p5{text-align: center;}
+
+#p6{text-align: justify;
+        margin-left: 30%;
+        text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568)}
+
+#p7{text-align: justify;
+        margin-left: 35%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568)
+        }
 
 #letrachica{text-align: right;
     font-size: 12.8px;}
@@ -181,8 +203,11 @@ hr{ border: solid 1.5px rgb(30, 255, 0);
 
 }
 
+#experience{text-align: center;}
 
-
+#studies{margin-bottom: 20%;}
+#hr-studies{margin-bottom: 15%;
+        margin-top: 5%}
 
 
 
@@ -346,8 +371,22 @@ nav{text-align: center;
     color: rgba(255, 255, 255, 0.849);
     margin: 30px auto;
     filter: saturate(110%);
+}
 
+.fotoibm{ display: grid;
+        max-width: 100%;
+        justify-content: center;
+        height: auto;
+        margin-top: 10%;}
 
+#aluasun{max-width: 100%;
+        margin-top: 5%;
+        height: auto;
+        margin-left: 1%;
+        border: solid rgb(30, 255, 0);
+        border-radius: 1%;
+        box-shadow: 1px 1px 6px 4px rgba(30, 255, 0, 0.614);
+        margin-bottom: 10%;
 }
 
 /************************** PROFILE PHOTO FLIP !!!!!!! **********************************************/
@@ -634,6 +673,35 @@ div.scroll-container {
         font-size: 0.75em;
         margin: 2%;}
 
+.galeria-skyrim{margin-top: 8%;
+                margin-bottom: 8%;}        
+.col-4 img{
+        margin-left: 18%;
+        max-width: 65%;
+        height: auto;
+        border: solid;
+        color: rgb(196, 196, 241);
+        border-radius: 3%;
+        box-shadow: 1px 1px 80px 2px rgba(196, 196, 241, 0.514);
+}
+
+.col-4:hover{
+        filter: opacity(88%);
+}
+
+
+.carteleras{ display: grid;
+                grid-template-columns: auto auto auto auto ; 
+}
+
+.col-6{text-align: center;
+        height: auto;
+        border: solid;
+        box-shadow:1px 1px 15px 4px rgba(30, 255, 0, 0.914)
+}
+
+.col-6:hover{filter:invert(7%) }
+
 
 
 
@@ -679,6 +747,22 @@ button {
 }
 
 #texto-oculto{display: none;}
+
+
+
+
+/************************* LIST ****************************/
+
+
+ul{list-style-position: inside;}
+li{text-align: justify ;
+        margin-left: 35%;
+        margin-right: 35%;
+        text-shadow: 0px -1px 7.5px rgba(0, 255, 13, 0.568);}
+
+
+
+
 
 
 
@@ -750,6 +834,7 @@ button {
     
 #titleaboutme{font-size: 19px}
 #titlecountry{font-size: 19px;}
+#titleexperience{font-size: 19px;}
 #p{font-size: 15px;
         margin-left: 10%;
         margin-right: 10%;}
@@ -762,6 +847,26 @@ button {
 #p3{font-size: 15px;
         margin-left: 10%;
         margin-right: 10%;}
+#p5{font-size: 15px;
+        margin-left: 10%;
+        margin-right: 10%;}
+
+#p6{font-size: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
+}
+
+#p7{
+        font-size: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
+}
+
+li{font-size: 15px;
+        margin-left: 10%;
+        margin-right: 10%;}
+
+
 #blockquote{font-size: 15px;}
 #blqt{font-size: 15px;}
 #marcusquote{font-size: 15px;}
@@ -804,14 +909,19 @@ button {
 .accordion{font-size: 17px;}
 
 
+
 .col-2{font-size: 6px;}
 .col-2:hover{zoom: 150%;
              letter-spacing: 1px;}
 
+#ibm-pc{width: 100px;
+        height: 100px;}
 
 
-
-
+.carteleras{ display: grid;
+                grid-template-columns: auto ; 
+                width: auto; height: auto;
+}
 
 
 
@@ -839,6 +949,9 @@ button {
 #barcelona{width: 180px; height: 120px;}
 #covadonga{width: 180px; height: 120px;}
 #galicia{width: 180px; height: 120px;}
+
+
+#aluasun{width: 300px; height: 250px;}
 
 /****** FLIP BOX FOR SHORT SCREENS ***********/
 
@@ -875,6 +988,13 @@ button {
         zoom: 108%;
         box-shadow:1px 1px 15px 4px rgba(30, 255, 0, 0.914)}
 
+
+.carteleras{ display: grid;
+        grid-template-columns: auto auto ; 
+        width: auto; height: auto;
+}
+
+
 #btn{width: 20%;
 
 }
@@ -893,8 +1013,14 @@ button {
     cursor: pointer;}
 
 
+#p6{margin-left: 15%;}
+#p7{margin-left: 20%;}
+
+
+
     }
     
+
 
 @media only screen and (min-width: 1025px) {                    /***************** BIG SCREENS ****************/
        
